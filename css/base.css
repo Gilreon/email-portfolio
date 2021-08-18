@@ -1,7 +1,7 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
 	box-sizing: border-box;
 }
@@ -143,19 +143,42 @@ img {
 
 }
 .single-box:nth-child(1) .img-area {
-	background-image: url("/project1.png");
+	background-image: url("/img/project1.png");
 }
 .single-box:nth-child(2) .img-area {
 	background-image: url();
 }
 .single-box:nth-child(3) .img-area {
-	background-image: url("/project3.jpg");
+	background-image: url("/img/project3.jpg");
 }
 .single-box:nth-child(4) .img-area {
 	background-image: url();
 }
 .single-box:nth-child(5) .img-area {
-	background-image: url("/project5.jpg");
+	background-image: url("/img/project5.jpg");
+}
+
+.header-text {
+font-size: 24px;
+font-weight: 500;
+line-height: 48px;
+}
+
+.img-text {
+	font-family: 'Poppins', sans-serif; 
+	padding-top: 20px;
+}
+
+.single-box:hover {
+	background: darkcyan;
+	color: #fff;
+	cursor: pointer;
+}
+
+.img-text p {
+	font-size: 15px;
+	font-weight:400;
+	line-height: 30px;
 }
 
 .mail-btn {
