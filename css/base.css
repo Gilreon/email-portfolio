@@ -142,6 +142,19 @@ img {
 	background-position: center center;
 
 }
+
+.box-btns {
+	margin: 5px;
+	padding: 10px 30px;
+	border-radius: 5%;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: white;
+	background-color: rgb(196, 191, 191);
+
+}
+
+
 .single-box:nth-child(1) .img-area {
 	background-image: url("https://github.com/Gilreon/email-portfolio/blob/master/img/project1.png?raw=true");
 }
@@ -172,7 +185,7 @@ line-height: 48px;
 .single-box:hover {
 	background: darkcyan;
 	color: #fff;
-	cursor: pointer;
+	
 }
 
 .img-text p {
