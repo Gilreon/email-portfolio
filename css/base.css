@@ -170,6 +170,9 @@ img {
 .single-box:nth-child(5) .img-area {
 	background-image: url("https://github.com/Gilreon/email-portfolio/blob/master/img/project5.jpg?raw=true");
 }
+.single-box:nth-child(6) .img-area {
+	background-image: url("https://github.com/Gilreon/email-portfolio/blob/master/img/logo.png?raw=true");
+}
 
 .header-text {
 font-size: 24px;
