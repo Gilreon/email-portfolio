@@ -179,6 +179,9 @@ img {
 .single-box:nth-child(8) .img-area {
 	background-image: url("https://github.com/Gilreon/email-portfolio/blob/master/img/qrstock.png?raw=true");
 }
+.single-box:nth-child(9) .img-area {
+	background-image: url("https://github.com/Gilreon/dictionary-project/blob/main/assets/images/preview.jpg?raw=true");
+}
 
 .header-text {
 font-size: 24px;
