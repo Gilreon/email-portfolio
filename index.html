@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -156,9 +156,20 @@
 
 		// Close menu when clicking a link
 		document.querySelectorAll('.main-nav a').forEach(link => {
-			link.addEventListener('click', () => {
+			link.addEventListener('click', (e) => {
+				e.preventDefault();
+				const targetId = link.getAttribute('href');
+				const targetSection = document.querySelector(targetId);
+				
+				// Close mobile menu if open
 				burgerMenu.classList.remove('active');
 				mainNav.classList.remove('active');
+				
+				// Smooth scroll to target
+				targetSection.scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				});
 			});
 		});
 	</script>
