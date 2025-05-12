@@ -1,0 +1,146 @@
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header {
+		width: 100%;
+	}
+
+	.col {
+		flex: 1 50%;
+	}
+
+	.row {
+		flex-wrap: wrap;
+	}
+
+	.secondary {
+		align-self: center;
+	}
+}
+
+@media (min-width: 1025px) {
+	.col {
+		flex-basis: 0;
+	}
+
+	.primary {
+		flex-grow: 1.4;
+	}
+
+	.banner {
+		display: flex;
+	}
+}
+
+/* ================================= 
+  Flexbox Layout
+==================================== */
+
+/* ---- Layout Containers ---- */
+.banner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2em;
+	padding: 8em 5% 4em;
+}
+
+.col {
+	flex: 1;
+	min-width: 300px;
+	max-width: 600px;
+}
+
+/* ---- Projects Grid ---- */
+.box-area {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2em;
+	padding: 2em 5%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.single-box {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	background: white;
+	border-radius: 12px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+	overflow: hidden;
+}
+
+.content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 1.5em;
+}
+
+.button-group {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	margin-top: auto;
+	padding-top: 1em;
+	justify-content: center;
+}
+
+/* Center single buttons */
+.button-group:has(a:only-child) {
+	justify-content: center;
+}
+
+/* ---- Skills Section ---- */
+.skill-icons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2em;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ---- Responsive Design ---- */
+@media (max-width: 768px) {
+	.banner {
+		flex-direction: column;
+		text-align: center;
+		padding: 6em 1em 3em;
+	}
+
+	.col {
+		width: 100%;
+		max-width: none;
+	}
+
+	.box-area {
+		grid-template-columns: 1fr;
+		padding: 1em;
+	}
+
+	.single-box {
+		margin: 0;
+	}
+
+	.button-group {
+		justify-content: center;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.box-area {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1025px) {
+	.box-area {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+

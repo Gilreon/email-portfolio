@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gilreon Lee - Front End & Email Developer</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/flexbox.css">
+	<meta name="description" content="Gilreon Lee - Front End Web Developer and HTML Email Developer Portfolio">
+</head>
+
+<body>
+	<header class="main-header" id='home'>
+		<div class="header-container">
+			<h1 class="name"><a href="#home">GL</a></h1>
+			<button class="burger-menu" aria-label="Toggle navigation menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="banner">
+			<div class="col">
+				<img class="logo" src="./img/ofme.jpg" alt="Gilreon Lee">
+				<h1 class="headline">Gilreon Lee</h1>
+				<span class="tagline">Front End Web Developer | HTML Email Developer</span>
+			</div>
+			<div class="col">
+				<h2>About Me</h2>
+				<p>I'm an HTML email and front-end developer, who enjoys taking on challenges and learning new technologies. I value critical thinking and attention to detail. My journey working within HTML Email/Front-End Development has been exciting and I am ready to further my career, all while learning even more.</p>
+				<h2>Skills</h2>
+				<div class="skill-icons">
+					<img src="html.svg" alt="HTML5" title="HTML5">
+					<img src="css3.svg" alt="CSS3" title="CSS3">
+					<img src="javascript.svg" alt="JavaScript" title="JavaScript">
+					<img src="sass.svg" alt="Sass" title="Sass">
+					<img src="sfmc.svg" alt="Salesforce Marketing Cloud" title="Salesforce Marketing Cloud">
+					<img src="sql.svg" alt="SQL" title="SQL">
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="projects">
+			<h2 class="section-title">Featured Projects</h2>
+			<div class="box-area">
+				<article class="single-box">
+					<div class="img-area" style="background-image: url('img/promotional1pic.png')"></div>
+					<div class="content">
+						<h3>Promotional Email</h3>
+						<p>Modern promotional email template with responsive design</p>
+						<div class="button-group">
+							<a class="box-btns" href="promotional1.html" target="_blank">View Project</a>
+						</div>
+					</div>
+				</article>
+				
+				<article class="single-box">
+					<div class="img-area" style="background-image: url('img/promotional2pic.png')"></div>
+					<div class="content">
+						<h3>Promotional Email</h3>
+						<p>Interactive promotional email with dynamic content</p>
+						<div class="button-group">
+							<a class="box-btns" href="promotional2.html" target="_blank">View Project</a>
+						</div>
+					</div>
+				</article>
+				
+				<article class="single-box">
+					<div class="img-area" style="background-image: url('img/newsletterpic.png')"></div>
+					<div class="content">
+						<h3>Newsletter</h3>
+						<p>Engaging newsletter template with modern layout</p>
+						<div class="button-group">
+							<a class="box-btns" href="newsletter.html" target="_blank">View Project</a>
+						</div>
+					</div>
+				</article>
+
+				<article class="single-box">
+					<div class="img-area" style="background-image: url('img/project1.png')"></div>
+					<div class="content">
+						<h3>Kayak</h3>
+						<p>Travel-themed promotional email</p>
+						<div class="button-group">
+							<a class="box-btns" href="https://github.com/Gilreon/kayak-email" target="_blank">View Code</a>
+							<a class="box-btns" href="https://gilreon.github.io/kayak-email/" target="_blank">View Project</a>
+						</div>
+					</div>
+				</article>
+			
+				<article class="single-box">
+					<div class="img-area" style="background-image: url('img/project2.png')"></div>
+					<div class="content">
+						<h3>Buffalo Wild Wings</h3>
+						<p>Transactional email template</p>
+						<div class="button-group">
+							<a class="box-btns" href="https://github.com/Gilreon/buffalo-wild-wings-email" target="_blank">View Code</a>
+							<a class="box-btns" href="https://gilreon.github.io/buffalo-wild-wings-email/" target="_blank">View Project</a>
+						</div>
+					</div>
+				</article>
+
+				<article class="single-box">
+					<div class="img-area" style="background-image: url('img/project4.png')"></div>
+					<div class="content">
+						<h3>Instacart</h3>
+						<p>Newsletter email template</p>
+						<div class="button-group">
+							<a class="box-btns" href="https://github.com/Gilreon/instacart-email" target="_blank">View Code</a>
+							<a class="box-btns" href="https://gilreon.github.io/instacart-email/" target="_blank">View Project</a>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section id="contact" class="contact">
+			<div class="mail-btn">
+				<h2 class="hire-btn">
+					<a href="mailto:gilreonlee@outlook.com">Let's Work Together</a>
+				</h2>
+			</div>
+		</section>
+	</main>
+	
+	<footer class="main-footer">
+		<p>&copy; 2025 Gilreon Lee. All rights reserved.</p>
+	</footer>
+
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KRSX3SGJ2N"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-KRSX3SGJ2N');
+	</script>
+	<script>
+		const burgerMenu = document.querySelector('.burger-menu');
+		const mainNav = document.querySelector('.main-nav');
+		
+		burgerMenu.addEventListener('click', () => {
+			burgerMenu.classList.toggle('active');
+			mainNav.classList.toggle('active');
+		});
+
+		// Close menu when clicking a link
+		document.querySelectorAll('.main-nav a').forEach(link => {
+			link.addEventListener('click', () => {
+				burgerMenu.classList.remove('active');
+				mainNav.classList.remove('active');
+			});
+		});
+	</script>
+</body>
+</html>
